@@ -1,0 +1,25 @@
+.footer {
+  background-color: $color-dark-gunmetal;
+  color: $color-mint-white;
+  padding: 42px 0 64px;
+
+  &__main-title {
+    font-size: 2.1rem;
+    margin-bottom: 19px;
+  }
+
+  &__main-text {
+    font-size: 1.4rem;
+  }
+
+  &__socials {
+    gap: 6.29px;
+  }
+
+  &__socials-column {
+    width: 51.1px;
+    height: 51.1px;
+    border-radius: 50%;
+    background-color: $color-mint-white;
+  }
+}

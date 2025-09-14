@@ -1,0 +1,9 @@
+.header {
+  background-color: $color-white;
+
+  &__logo {
+    width: 42px;
+    height: 55px;
+    object-fit: contain;
+  }
+}

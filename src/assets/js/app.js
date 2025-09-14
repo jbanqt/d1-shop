@@ -16,9 +16,4 @@ require('foundation-sites');
 import './common';
 import './top';
 
-<<<<<<< HEAD
 $(document).foundation();
-=======
-$(document).foundation();
-
->>>>>>> 4456dd2 (Code top page)

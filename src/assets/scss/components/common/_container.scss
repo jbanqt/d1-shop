@@ -1,0 +1,14 @@
+.container {
+  max-width: calc(1264px + 4rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: 2rem;
+  @include breakpoint(medium) {
+    max-width: calc(1264px + 8rem);
+    padding-inline: 4rem;
+  }
+  @include breakpoint(large) {
+    max-width: calc(1264px + 17.6rem);
+    padding-inline: 8.8rem;
+  }
+}

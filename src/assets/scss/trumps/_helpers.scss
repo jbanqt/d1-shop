@@ -1,0 +1,31 @@
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: map-get($foundation-palette, "primary");
+}
+
+.text-secondary {
+  color: map-get($foundation-palette, "secondary");
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.text-snow {
+  color: $color-snow;
+}
+
+.text-underline {
+  text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+
+.section-title {
+  text-transform: uppercase;
+
+  &--large {
+    font-size: 4rem;
+    @include breakpoint(medium) {
+      font-size: 6rem;
+    }
+    @include breakpoint(large) {
+      font-size: 8rem;
+    }
+  }
+}

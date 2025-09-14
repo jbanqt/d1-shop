@@ -1,0 +1,11 @@
+p {
+  font-size: 1.6rem;
+  
+  @include breakpoint(medium) {
+    font-size: 1.7rem;
+  }
+
+  @include breakpoint(large) {
+    font-size: 1.8rem;
+  }
+}

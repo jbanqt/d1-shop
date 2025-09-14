@@ -3,23 +3,159 @@
   color: $color-mint-white;
   padding: 42px 0 64px;
 
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+    @include breakpoint(large) {
+      align-items: center;  
+    }
+  }
+
   &__main-title {
-    font-size: 2.1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $color-mint-white;
     margin-bottom: 19px;
+    @include breakpoint(large) {
+      font-size: 2.1rem;
+    }
   }
 
   &__main-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    @include breakpoint(large) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__contact {
+    position: relative;
+  }
+
+  &__contact-field {
+    width: 100%;
+    height: 50px;
+    padding: 0 21px;
+    font-size: 1.6rem;
+    @include breakpoint(large) {
+      height: 62px;
+      font-size: 1.4rem;
+    }
+
+    &::placeholder {
+      font-size: 1.4rem;
+      color: rgba(34, 36, 48, 0.3);
+    }
+  }
+
+  &__contact-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    & > .button {
+      padding: 11px 20px 10px;
+      @include breakpoint(large) {
+        padding: 13px 20px 12px;
+      }
+    }
   }
 
   &__socials {
     gap: 6.29px;
+    margin-top: 24px;
   }
 
   &__socials-column {
-    width: 51.1px;
-    height: 51.1px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: $color-mint-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    @include breakpoint(large) {
+      width: 51.1px;
+      height: 51.1px;
+    }
+
+    &.fb img {
+      width: 14px;
+    }
+  }
+
+  &__end {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include breakpoint(large) {
+      flex-direction: row;
+      align-items: flex-end;  
+      justify-content: space-between;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 37px;
+    margin-top: 50px;
+  }
+
+  &__links-ctr {
+    width: 50%;
+    @include breakpoint(large) {
+      width: fit-content;
+    }
+  }
+
+  &__links-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $color-mint-white;
+    @include breakpoint(large) {
+      font-size: 2.1rem;
+    }
+  }
+
+  &__links-block {
+    margin-top: 12.9px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.57;
+    color: rgb(239, 247, 250, 0.4);
+    @include breakpoint(large) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__copyright {
+    display: block;
+    font-size: 1.2rem;
+    color: rgb(239, 247, 250, 0.4);
+    margin-top: 30px;
+    text-align: center;
+    @include breakpoint(large) {
+      text-align: left;
+      margin-top: 53px;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__note {
+    font-size: 1.1rem;
+    line-height: 1.18;
+    color: rgba(239, 247, 250, 0.5);
+    padding: 13px 6px 12px 15px;
+    border-radius: 17px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    @include breakpoint(large) {
+      max-width: 300px;
+    }
   }
 }

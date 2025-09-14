@@ -1,0 +1,56 @@
+.header {
+  &__wrapper {
+    background-color: $white;
+    padding: 5px 20px;
+  }
+
+  &__main {
+    gap: 16px;
+  }
+
+  &__menu-bar {
+    cursor: pointer;
+  }
+
+  &__logo {
+    width: 32px;
+    height: 45px;
+    object-fit: contain;
+    @include breakpoint(large) {
+      width: 42px;
+      height: 55px;
+    }
+  }
+
+  &__ct {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+  }
+
+  &__ct-button {
+    padding: 13px 20px 13px;
+  }
+
+  &__ct-cart {
+    position: relative;
+    width: 36.52px;
+    height: 32.88px;
+    cursor: pointer;
+  }
+
+  &__ct-cart-num {
+    position: absolute;
+    top: -11px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    font-size: 1.8rem;
+    color: $white;
+    background-color: $black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,9 @@
+.ann {
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: map-get($foundation-palette, "primary");
+  color: $color-dark-gunmetal;
+  padding: 5px 20px 6px;
+  text-transform: uppercase;
+  text-align: center;
+}
